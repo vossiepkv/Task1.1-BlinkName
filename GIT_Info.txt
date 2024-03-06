@@ -1,0 +1,40 @@
+Getting to know GIT
+
+
+Remote repo - version of code stored remotely "working version of code"
+
+Local repo - a version of the remote repo that you are individually working on
+
+GIT History - tracks commits (Changes to code or checkpoints) this is done first locally then they are pushed to the remote repo
+
+Commits - this is done first locally then they are 'pushed' to the remote repo
+
+pull - pulls changes (or commits) from remote repo to your local repo
+
+push - pushes changes to the branch you are working on
+
+Branches - master branch is most up to date working version of code, branches store and track commits allowing you to see changes or role back to older iterations of the code. secondary branchs allows you to work on code without affecting master branch until you are sure your code is properly working once this is complete you can merge the branches allowing them to work coherently. can still pull changes from master branch to secondary
+
+conflicts - if you run into a conflict error when pushing your changes from the local to remote you need to pull changes from the remote first you will then get a message asking you to fix conflicts. the file will have error messages delete and make file how you want then commit + pushwork flow > add > commit > push > conflict > pull > fix > add > commit > push
+
+Commands - 
+
+git init - initialise CD as a repo
+
+git add filename - adds file to staging area (preparing for commit)
+
+git status - shows branch, changes to be commited shows staging area.
+
+git commit -m "commit message/ description of commit" - commits file to branch with description of the change
+
+git add . - adds all files in the repo to staging
+
+git checkout -b branchname - creates a new branch and swaps to it 
+
+git merge main - merges changes from master to the new branch allowing you to work with up to date files on your branch 
+
+git remote add origin https://github.com/vossiepkv/reponame.git - adds the cd as the origin for the remote repo
+
+git push -u origin main - pushes the local main branch to the remote repo only need to do this in the repo once then can do (git push)
+
+git pull origin main - pulls main branch from remote repo
